@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/src/fonts/ba9851c3c22cd980-s.woff2) format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search > div {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px 20px;
+  padding-left: 40px;
+  font-size: 16px;
+  border: 1.5px solid #a3b1d1;
+  border-radius: 30px;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  color: #333;
+}
+
+input[type='text']::placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+input[type='text']:focus {
+  border-color: #5a6eb9;
+  box-shadow: 0 0 5px rgba(90, 110, 185, 0.5);
+}
+
+.searchIndicator {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: #666666;
+  width: 20px;
+  height: 20px;
+}
+
+.pressEnter {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: #e0e0e0;
+  color: #555555;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  user-select: none;
+  display: none;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
