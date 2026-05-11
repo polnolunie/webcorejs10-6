@@ -9,6 +9,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Inter', Arial, sans-serif;
+  background-color: #ece9e2;
 }
 
 .search > div {
@@ -130,10 +131,11 @@ p {
 
 .headerforSavedList {
   padding-top: 10px;
+  background-color: #445592;
 }
 
 .savedRepositoriesList {
-  max-height: 200px;
+  max-height: 500px;
   overflow: auto;
   position: relative;
 }
@@ -141,12 +143,15 @@ p {
 .savedRepositoriesList li {
   list-style: none;
   padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
 button {
   z-index: 100;
-  color: #e0e0e0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  width: 40px;
+  margin: 5px;
 }
