@@ -11,9 +11,16 @@
     <link rel="stylesheet" href="/src/scss/style.css" />
   </head>
   <body>
+    <div class="header"
+      ><h2>FIND REPOSITORIES QUICKLY</h2>
+      <p class="comment-Habsida">
+        Search and discover GitHub repositories here
+      </p>
+      <br />
+      <p class="comment-hint"> for JavaScript: Core 10.6 </p>
+    </div>
     <div class="search" style="display: auto">
       <div>
-        <div class="pressEnter">PRESS ENTER FOR MORE</div>
         <div class="searchIndicator">
           <svg
             alt="Search"
@@ -31,7 +38,12 @@
         <form>
           <input type="text" placeholder="Search for repositories..." />
         </form>
+        <ul class="autocompleteList"></ul>
       </div>
+    </div>
+    <div class="savedRepositories-wrapper">
+      <div class="headerforSavedList">Saved repositories</div>
+      <ul class="savedRepositoriesList"></ul>
     </div>
     <script src="/src/js/index.js"></script>
   </body>

@@ -1,6 +1,8 @@
 $bgColor: #24292e;
 $text: #fff;
 
+@import url(/src/scss/style.css);
+
 @font-face {
   font-family: 'Comic';
   src: url('../fonts/comic.ttf') format('truetype');
@@ -8,10 +10,10 @@ $text: #fff;
   font-style: italic;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/src/fonts/ba9851c3c22cd980-s.woff2) format('woff2');
 }
