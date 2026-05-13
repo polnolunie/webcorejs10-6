@@ -4,15 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedRepositoriesList = document.querySelector('.savedRepositoriesList')
   const idContainer = new Set()
   console.log(`it works! ${autocompleteList}`)
-  if (input)
-    ('input',
-      () => {
-        if (input.value.length > 0) {
-          autocompleteList.style.display = 'flex'
-        } else {
-          autocompleteList.style.display = 'none'
-        }
-      })
+  input.addEventListener('input', () => {
+    if (input.value.length > 0) {
+      autocompleteList.style.display = 'flex'
+    } else {
+      autocompleteList.style.display = 'none'
+    }
+  })
 
   const debounce = (fn, debounceTime = 0) => {
     // your code goes here
@@ -56,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newLi = document.createElement('li')
             newLi.textContent = `Name: ${element.name} Owner: ${element.owner.login} Stars: ${element.stargazers_count}`
             savedRepositoriesList.appendChild(newLi)
+            input.value = ''
 
             const removeBtn = document.createElement('button')
             removeBtn.innerHTML = `

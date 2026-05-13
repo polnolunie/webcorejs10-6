@@ -9,7 +9,11 @@
 * {
   box-sizing: border-box;
   font-family: 'Inter', Arial, sans-serif;
-  background-color: #ece9e2;
+}
+
+body,
+input {
+  background-color: #efede9;
 }
 
 .search > div {
